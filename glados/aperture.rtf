@@ -1,0 +1,214 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf510
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0  ::enrichment::\
+ uinx = math.random(0000000000,9999999999)\
+uinx2 = math.random(0000000000,9999999999)\
+uinx3 = math.random(0000000000,9999999999)\
+uinx4 = math.random(0000000000,9999999999)\
+uinx5 = math.random(0000000000,9999999999)\
+uinx6 = math.random(0000000000,9999999999)\
+uinx7 = math.random(0000,9999)\
+   io.write("\\027[00;37mLoaded: ENRICHMENT CENTER TEST SUBJECT APPLICATION PROCESS\\n\\027[00;37m")\
+   io.write("\\027[00;37mForm  : FORMS-EN-2873-FORM (PART1: PERSONALITY & GENERAL KNOWLEDGE)\\n\\027[00;37m")  \
+   io.write("\\027[00;37mIf you are a first time applicant, please type \\"CONTINUE\\".\\n\\027[00;37m")  \
+   \
+   io.write("\\027[00;37m\\nDISREGARD THIS INSTRUCTION if you are returning to form FORMS-EN-2873-FORM after a break of any duration for \\n\\027[00;37m")\
+   io.write("\\027[00;37many reason. In that case, you MUST contact your supervisor before proceeding.Your supervisor will solicit your )\\n\\027[00;37m")  \
+   io.write("\\027[00;37mAuthorized Administrative Unit for an affirmative injunction to type \\"CONTINUE\\".\\n\\027[00;37m")  \
+   \
+   io.write("\\027[00;37m\\nIf permission to type \\"CONTINUE\\" has been granted, please do so now, unless the box labeled \\"DO NOT TYPE \\n\\027[00;37m")\
+   io.write("\\027[00;37m\\"CONTINUE\\" on the \\"Forms Re-Sanction\\" form you should have received from your supervisor is checked, in \\n\\027[00;37m")  \
+   io.write("\\027[00;37mwhich case you should remain at your workstation not typing \\"CONTINUE\\" until such a time as you are \\n\\027[00;37m")  \
+   io.write("\\027[00;37minstructed by your supervisor to discontinue not typing it.\\n\\n\\027[00;37m")  \
+   repeat \
+   io.write("\\027[00;32m>: \\027[00;37m") \
+    sortcommand=io.read()\
+    if sortcommand=="EXIT" or sortcommand=="exit" then\
+      goto choice\
+    end\
+    io.write("\\027[00;32m\\n\\027[00;37m")\
+ until sortcommand=="CONTINUE" or sortcommand=="continue" or sortcommand=="EXIT" or sortcommand=="exit"\
+     io.write("\\027[00;37mBelow is your form FORMS-EN-2873-FORM Unique Identity Number (Plus Letters)\\n\\027[00;37m")\
+   io.write("\\027[00;37m(UIN(+L)):\\n\\027[00;37m")  \
+   io.write("\\027[00;37m\\n\\027[00;37m")  \
+   io.write("\\027[00;37m\\n\\027[00;37m")  \
+   io.write("\\027[00;37m[\\027[00;37m" .. uinx .. uinx2 .. uinx3 .. uinx4 .. uinx5 .. uinx6 .. uinx7 .. "\\027[00;37m]\\027[00;37m")  \
+   io.write("\\027[00;37m\\n\\027[00;37m") \
+   io.write("\\027[00;37m\\n\\027[00;37m") \
+   io.write("\\027[00;37mPlease memorize your UIN(+L), as you may be required to recite it from memory as proof. The opening and \\n\\027[00;37m")\
+   io.write("\\027[00;37mclosing braces are decorative and should not be memorized.\\n\\027[00;37m")\
+   io.write("\\027[00;37m\\n\\027[00;37m") \
+   io.write("\\027[00;37m\\n\\027[00;37m") \
+      io.write("\\027[00;37mWhen you are finished memorizing your case sensitive UIN(+L), type \\"CONTINUE\\" to proceed.\\n\\027[00;37m") \
+      io.write("\\027[00;37m\\n\\027[00;37m")\
+      repeat \
+   io.write("\\027[00;32m>: \\027[00;37m")\
+     sortcommand2=io.read()\
+     if sortcommand2=="EXIT" or sortcommand2=="exit" then\
+      goto choice\
+    end\
+    io.write("\\027[00;32m\\n\\027[00;37m")\
+    until sortcommand2=="CONTINUE" or sortcommand2=="continue" or sortcommand2=="EXIT" or sortcommand2=="exit"\
+    io.write("\\027[00;32m\\n\\027[00;37m")\
+  io.write("\\027[00;37mForm FORMS-EN-2873-FORM - Page 1\\n\\n\\027[00;37m")  \
+   io.write("\\027[00;37mIf given a choice, what would you like to be called?\\n\\027[00;37m")\
+     \
+   io.write("\\027[00;32m\\n\\027[00;37m")\
+   io.write("\\027[00;32m>: \\027[00;37m")\
+        zcommand=io.read()\
+ io.write("\\027[00;32m\\n\\027[00;37m")\
+ if zcommand=="exit" or zcommand=="EXIT" then\
+    goto tt\
+ end\
+  io.write("\\027[00;37mForm FORMS-EN-2873-FORM - Page 2\\n\\n\\027[00;37m")  \
+  io.write("\\027[00;32m\\n\\027[00;37m")\
+    io.write("\\027[00;37mIt is important to consult a physician before starting an Aperture Science Enrichment Center program. If one\\n\\027[00;37m")  \
+    io.write("\\027[00;37mor more of the statements listed below applies to you, please contact your supervisor to secure permission to \\n\\027[00;37m") \
+    io.write("\\027[00;37mconsult a physician before beginning an Enrichment Center program. Pick the condition that most applies to \\n\\027[00;37m") \
+io.write("\\027[00;37myou\\n\\n\\027[00;37m")\
+\
+  io.write("\\027[00;32m\\n\\027[00;37m")\
+    io.write("\\027[00;37m1) dizziness\\n\\027[00;37m")  \
+    io.write("\\027[00;37m2) shortness of breath\\n\\027[00;37m") \
+    io.write("\\027[00;37m3) problems waking up in the morning\\n\\027[00;37m") \
+io.write("\\027[00;37m4) problems staying up 48 hours straight\\n\\027[00;37m")  \
+  io.write("\\027[00;37m5) have not previously performed an enrichment center program\\n\\n\\027[00;37m")  \
+ repeat \
+   io.write("\\027[00;32m>: \\027[00;37m")\
+     sortcommand3=io.read()\
+     \
+    \
+     if sortcommand3=="EXIT" or sortcommand3=="exit" then\
+      goto choice\
+    end\
+    io.write("\\027[00;32m\\n\\027[00;37m")\
+    until sortcommand3=="CONTINUE" or sortcommand3=="continue" or sortcommand3=="EXIT" or sortcommand3=="exit" or sortcommand3=="1" or sortcommand3=="2" or sortcommand3=="3" or sortcommand3=="4" or sortcommand3=="5"\
+  io.write("\\027[00;32m\\n\\027[00;37m")\
+   io.write("\\027[00;37mForm FORMS-EN-2873-FORM - Page 3\\n\\n\\027[00;37m")  \
+  io.write("\\027[00;32m\\n\\027[00;37m")\
+  io.write("\\027[00;37mSally, Dwayne, Anthony, David, and Franklin are, collectively, exactly 10 years apart in age. Sally's is two \\n\\027[00;37m") \
+   io.write("\\027[00;37myears older than David. David's favorite letter is 'g'. Anthony's favorite letter is also 'g', but Dwayne has \\n\\027[00;37m") \
+   io.write("\\027[00;37mno preference, insisting that he likes all the letters equally except for 's'. What is Franklin's favorite \\n\\027[00;37m") \
+    io.write("\\027[00;37mletter?\\n\\027[00;37m") \
+   io.write("\\027[00;37m01) a\\n\\027[00;37m")  \
+    io.write("\\027[00;37m2) b\\n\\027[00;37m") \
+    io.write("\\027[00;37m3) c\\n\\027[00;37m") \
+io.write("\\027[00;37m4) d\\n\\027[00;37m")  \
+  io.write("\\027[00;37m5) e\\n\\027[00;37m")  \
+  io.write("\\027[00;37m6) f\\n\\027[00;37m")  \
+  io.write("\\027[00;37m7) g\\n\\027[00;37m")  \
+  io.write("\\027[00;37m8) h\\n\\027[00;37m")  \
+  io.write("\\027[00;37m9) i\\n\\027[00;37m")  \
+  io.write("\\027[00;37m10) j\\n\\027[00;37m")  \
+  io.write("\\027[00;37m11) k\\n\\027[00;37m")  \
+  io.write("\\027[00;37m12) l\\n\\027[00;37m")  \
+  io.write("\\027[00;37m13) m\\n\\027[00;37m")  \
+  io.write("\\027[00;37m14) n\\n\\027[00;37m")  \
+  io.write("\\027[00;37m15) o\\n\\027[00;37m")  \
+  io.write("\\027[00;37m16) p\\n\\027[00;37m")  \
+  io.write("\\027[00;37m17) q\\n\\027[00;37m")  \
+  io.write("\\027[00;37m18) r\\n\\027[00;37m")  \
+  io.write("\\027[00;37m19) t\\n\\027[00;37m")  \
+  io.write("\\027[00;37m20) u\\n\\027[00;37m")  \
+  io.write("\\027[00;37m21) v\\n\\027[00;37m")  \
+  io.write("\\027[00;37m22) w\\n\\027[00;37m")  \
+  io.write("\\027[00;37m23) x\\n\\027[00;37m")  \
+  io.write("\\027[00;37m24) y\\n\\027[00;37m")  \
+    io.write("\\027[00;37m24) z\\n\\027[00;37m")  \
+\
+  io.write("\\027[00;37m\\n\\027[00;37m")  \
+\
+  \
+  repeat \
+   io.write("\\027[00;32m>: \\027[00;37m")\
+     sortcommand4=io.read()\
+     \
+    \
+     if sortcommand4=="EXIT" or sortcommand4=="exit" then\
+      goto choice\
+    end\
+    io.write("\\027[00;32m\\n\\027[00;37m")\
+    until sortcommand4=="CONTINUE" or sortcommand4=="continue" or sortcommand4=="EXIT" or sortcommand4=="exit" or sortcommand4=="1" or sortcommand4=="2" or sortcommand4=="3" or sortcommand4=="4" or sortcommand4=="5" or sortcommand4=="6" or sortcommand4=="7" or \
+sortcommand4=="8" or sortcommand4=="9" or sortcommand4=="10" or sortcommand4=="11" or sortcommand4=="12" or sortcommand4=="13" or sortcommand4=="14" or sortcommand4=="15" or sortcommand4=="16" or sortcommand4=="17" or sortcommand4=="18" or sortcommand4=="19" or\
+sortcommand4=="20" or sortcommand4=="21" or sortcommand4=="22" or sortcommand4=="23" or\
+sortcommand4=="24" or sortcommand4=="25"\
+       io.write("\\027[00;32m\\n\\027[00;37m")\
+    io.write("\\027[00;37mForm FORMS-EN-2873-FORM - Page 4\\n\\n\\027[00;37m")  \
+  io.write("\\027[00;32m\\n\\027[00;37m")\
+  io.write("\\027[00;37mWhich of the following best describes your pain? \\n\\027[00;37m") \
+   io.write("\\027[00;37m1) Nondescript\\n\\027[00;37m") \
+   io.write("\\027[00;37m2) Shooting \\n\\027[00;37m") \
+    io.write("\\027[00;37m3) Stabbing\\n\\027[00;37m") \
+   io.write("\\027[00;37m4) Burning\\n\\027[00;37m")  \
+    io.write("\\027[00;37m5) Prickly\\n\\027[00;37m") \
+    io.write("\\027[00;37m6) Aching\\n\\027[00;37m") \
+io.write("\\027[00;37m7) Sharp\\n\\027[00;37m")  \
+  io.write("\\027[00;37m8) Dull\\n\\027[00;37m") \
+    \
+     io.write("\\027[00;37m\\n\\027[00;37m")  \
+     repeat \
+   io.write("\\027[00;32m>: \\027[00;37m")\
+     sortcommand5=io.read()\
+     \
+    \
+     if sortcommand5=="EXIT" or sortcommand5=="exit" then\
+      goto choice\
+    end\
+    io.write("\\027[00;32m\\n\\027[00;37m")\
+    until sortcommand5=="CONTINUE" or sortcommand5=="continue" or sortcommand5=="EXIT" or sortcommand5=="exit" or sortcommand5=="1" or sortcommand5=="2" or sortcommand5=="3" or sortcommand5=="4" or sortcommand5=="5" or sortcommand5=="6" or sortcommand5=="7" or \
+sortcommand5=="8"\
+    \
+    \
+    \
+  io.write("\\027[00;32m\\n\\027[00;37m")\
+  io.write("\\027[00;37mForm FORMS-EN-2873-FORM - Page 5\\n\\n\\027[00;37m")  \
+  io.write("\\027[00;32m\\n\\027[00;37m")\
+  io.write("\\027[00;37mWhat is your favorite color? \\n\\027[00;37m") \
+  io.write("\\027[00;37m01) Peach-orange          25) Lemon Cream           49) Lime\\n\\027[00;37m")             \
+  io.write("\\027[00;37m02) Powder blue           26) Pale chestnut         50) Lime\\n\\027[00;37m") \
+  io.write("\\027[00;37m03) Cyan                  27) Bondi Blue            32) Lime\\n\\027[00;37m")  \
+  io.write("\\027[00;37m04) Chartreuse            28) Gamboge               32) Lime\\n\\027[00;37m")  \
+  io.write("\\027[00;37m05) Jade                  29) Gold                  32) Lime\\n\\027[00;37m")                                \
+  io.write("\\027[00;37m06) Dark Control          30) Steel Blue            32) Lime\\n\\027[00;37m") \
+  io.write("\\027[00;37m07) Navy blue             31) Tangerine             32) Lime\\n\\027[00;37m")  \
+  io.write("\\027[00;37m08) Pale mauve            32) Lime                  32) Lime\\n\\027[00;37m") \
+  io.write("\\027[00;37m09) Linen                 33) Seashell              32) Lime\\n\\027[00;37m") \
+  io.write("\\027[00;37m10) Dark goldenrod        34) Pale pink             32) Lime\\n\\027[00;37m") \
+  io.write("\\027[00;37m11) Pumpkin               35) Dark turquoise        32) Lime\\n\\027[00;37m") \
+  io.write("\\027[00;37m12) Dark cerulean         36) Pale cornflower blue  32) Lime\\n\\027[00;37m") \
+  io.write("\\027[00;37m13) Zinnwaldite           37) Denim                 32) Lime\\n\\027[00;37m") \
+  io.write("\\027[00;37m14) Rust                  38) Emerald               32) Lime\\n\\027[00;37m") \
+  io.write("\\027[00;37m15) Lavender Blush        39) Burnt Sienna          32) Lime\\n\\027[00;37m") \
+  io.write("\\027[00;37m16) Green                 40) Buff                  32) Lime\\n\\027[00;37m") \
+  io.write("\\027[00;37m17) Lilac                 41) Brown                 32) Lime\\n\\027[00;37m") \
+  io.write("\\027[00;37m18) Blue                  42) Pear                  32) Lime\\n\\027[00;37m") \
+  io.write("\\027[00;37m19) Midnight Blue         43) Orangatang Red        32) Lime\\n\\027[00;37m") \
+  io.write("\\027[00;37m20) Tan                   44) Chestnut              32) Lime\\n\\027[00;37m") \
+  io.write("\\027[00;37m21) Carmine               45) Cerulean              32) Lime\\n\\027[00;37m") \
+  io.write("\\027[00;37m22) Amber                 46) Dark Tea Green        32) Lime\\n\\027[00;37m") \
+  io.write("\\027[00;37m23) Indigo                47) Dark salmon           32) Lime\\n\\027[00;37m") \
+  io.write("\\027[00;37m24) Pale red-violet       48) Sandy brown           32) Lime\\n\\027[00;37m") \
+\
+  \
+    \
+     io.write("\\027[00;37m\\n\\027[00;37m")  \
+     repeat \
+   io.write("\\027[00;32m>: \\027[00;37m")\
+     sortcommand6=io.read()\
+     \
+    \
+     if sortcommand6=="EXIT" or sortcommand6=="exit" then\
+      goto choice\
+    end\
+    io.write("\\027[00;32m\\n\\027[00;37m")\
+    until sortcommand6=="CONTINUE" or sortcommand6=="continue" or sortcommand6=="EXIT" or sortcommand6=="exit" or sortcommand6=="1" or sortcommand6=="2" or sortcommand6=="3" or sortcommand6=="4" or sortcommand6=="5" or sortcommand6=="6" or sortcommand6=="7" or \
+sortcommand6=="8"\
+    \
+    \
+    \
+    \
+    }
